@@ -24,12 +24,12 @@ flowchart RL
     Python --> Core
     Haskell --> Core
     Node --> Core
-    etc --> Core
+    etc... --> Core
     pkgs --> Core
     pkgs --> Python
     pkgs --> Haskell
     pkgs --> Node
-    pkgs --> etc..
+    pkgs --> etc...
     UserPkgs --> pkgs
 ```
 
