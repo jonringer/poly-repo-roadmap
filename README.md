@@ -22,7 +22,7 @@ less emphasis on dogmatic best practices.
 info 
 ---
 flowchart repos
-    Stdenv --> Lib
+    Stdenv
 ```
 
 ## Repository descriptions
