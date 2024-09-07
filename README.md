@@ -18,8 +18,11 @@ be added, and greater freedom for individuals to contribute their additions with
 less emphasis on dogmatic best practices.
 
 ```mermaid
-graph repos;
-  Stdenv;
+---
+title: Poly Repo
+---
+flowchart repos
+  stdenv
 ```
 
 ## Repository descriptions
