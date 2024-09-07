@@ -19,6 +19,8 @@ less emphasis on dogmatic best practices.
 
 ```mermaid
 flowchart RL
+    pkgs["Pkgs + PkgsModules"]
+    Core["Core + CoreModules"]
     Stdenv --> Lib
     Core --> Stdenv
     Python --> Core
@@ -61,6 +63,15 @@ All repositories will be Nix 2.3 compatible, with optional flake.nix entry point
   - The NUR/"AUR" equivalent.
   - Allows for people getting started with Nix to share expressions in a semi-centralized manner
   - Linting and basic concerns for code quality still upheld, but less of an emphasis from "official" overlays
+
+## NixOS Modules
+
+- [ ] Core Modules
+  - "Minimal" set of modules to create a usable NixOS system
+  - Targeting mostly enterprise, edge compute, and single purpose systems
+- [ ] Pkgs Modules
+  - "Complete" set of modules, appropriate for most end-users
+  - Analogous to the current nixpkgs/nixos module collection
 
 ## Addtional tooling
 
