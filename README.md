@@ -60,7 +60,7 @@ All repositories will be Nix 2.3 compatible, with optional flake.nix entry point
 - [ ] User-pkgs:
   - The NUR/"AUR" equivalent.
   - Allows for people getting started with Nix to share expressions in a semi-centralized manner
-  - Still held linting and basic concerns for code quality, but less of an emphasis from "official" overlays
+  - Linting and basic concerns for code quality still upheld, but less of an emphasis from "official" overlays
 
 ## Addtional tooling
 
