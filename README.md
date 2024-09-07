@@ -18,8 +18,8 @@ be added, and greater freedom for individuals to contribute their additions with
 less emphasis on dogmatic best practices.
 
 ```mermaid
-graph repos
-  Stdenv
+graph repos;
+  Stdenv;
 ```
 
 ## Repository descriptions
