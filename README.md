@@ -19,7 +19,18 @@ less emphasis on dogmatic best practices.
 
 ```mermaid
 flowchart LR
-    stdenv
+    Stdenv --> Lib
+    Core --> Stdenv
+    Python --> Core
+    Haskell --> Core
+    Node --> Core
+    etc --> Core
+    pkgs --> Core
+    pkgs --> Python
+    pkgs --> Haskell
+    pkgs --> Node
+    pkgs --> etc
+    userPkgs --> pkgs
 ```
 
 ## Repository descriptions
