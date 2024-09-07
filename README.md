@@ -19,18 +19,18 @@ less emphasis on dogmatic best practices.
 
 ```mermaid
 graph Repos;
-  Stdenv-->Lib
-  Core-->Stdenv
-  Python-->Core
-  Haskell-->Core
-  Node-->Core
-  etc-->Core
-  pkgs-->Core
-  pkgs-->Python
-  pkgs-->Haskell
-  pkgs-->Node
-  pkgs-->etc
-  user-pkgs-->pkgs
+    Stdenv-->Lib;
+    Core-->Stdenv;
+    Python-->Core;
+    Haskell-->Core;
+    Node-->Core;
+    etc-->Core;
+    pkgs-->Core;
+    pkgs-->Python;
+    pkgs-->Haskell;
+    pkgs-->Node;
+    pkgs-->etc;
+    user-pkgs-->pkgs;
 ```
 
 ## Repository descriptions
