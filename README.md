@@ -19,7 +19,7 @@ less emphasis on dogmatic best practices.
 
 ```mermaid
 ---
-title: Poly Repo
+title: PolyRepo
 ---
 flowchart R
     stdenv
