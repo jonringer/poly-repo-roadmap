@@ -18,19 +18,19 @@ be added, and greater freedom for individuals to contribute their additions with
 less emphasis on dogmatic best practices.
 
 ```mermaid
-graph Repos;
-    Stdenv-->Lib;
-    Core-->Stdenv;
-    Python-->Core;
-    Haskell-->Core;
-    Node-->Core;
-    etc-->Core;
-    pkgs-->Core;
-    pkgs-->Python;
-    pkgs-->Haskell;
-    pkgs-->Node;
-    pkgs-->etc;
-    user-pkgs-->pkgs;
+flowchart Repos
+    Stdenv --> Lib
+    Core --> Stdenv
+    Python --> Core
+    Haskell --> Core
+    Node --> Core
+    etc --> Core
+    pkgs --> Core
+    pkgs --> Python
+    pkgs --> Haskell
+    pkgs --> Node
+    pkgs --> etc
+    userPkgs --> pkgs
 ```
 
 ## Repository descriptions
