@@ -18,7 +18,7 @@ be added, and greater freedom for individuals to contribute their additions with
 less emphasis on dogmatic best practices.
 
 ```mermaid
-flowchart LR
+flowchart RL
     Stdenv --> Lib
     Core --> Stdenv
     Python --> Core
