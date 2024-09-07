@@ -18,49 +18,49 @@ be added, and greater freedom for individuals to contribute their additions with
 less emphasis on dogmatic best practices.
 
 ```mermaid
-flowchart Repos
+flowchart RL
     Stdenv --> Lib
     Core --> Stdenv
     Python --> Core
     Haskell --> Core
     Node --> Core
-    etc --> Core
+    etc... --> Core
     pkgs --> Core
     pkgs --> Python
     pkgs --> Haskell
     pkgs --> Node
-    pkgs --> etc
-    userPkgs --> pkgs
+    pkgs --> etc...
+    UserPkgs --> pkgs
 ```
 
 ## Repository descriptions
 
 All repositories will be Nix 2.3 compatible, with optional flake.nix entry points.
 
-- Lib:
+- [x] Lib: https://github.com/jonringer/nix-lib
   - nixpkgs/lib but reduced to just nix utilities
   - lib.systems is moved to stdenv repo
   - lib.maintainers and lib.teams moved to core
-- Stdenv:
+- [x] Stdenv: https://github.com/jonringer/stdenv
   - Encapsulates bootstraping the `stdenv` package for platforms.
   - Handles package splicing and cross compilation concerns
   - Contains the logic for `pkgs.config` and overlay application
   - Maintained by a dedicated team of individuals
-- Core:
+- [ ] Core:
   - Provides the stdenv.mkDerivations (e.g. buildPythonPackage) helpers
   - Provides a few thousand of the most common development dependencies
     - Desire here is to provide the 20% of packages which are used 80% of the time.
   - Bootstrap language ecosystem package sets.
   - Contains maintainer information
-- Language package sets:
+- [ ] Language package sets:
   - Contain a top-level overlay and `overrideScope` of the package set with richer set of packages
-- Pkgs:
+- [ ] Pkgs:
   - Combines all of the langauge package set overlays
   - Acts as the "backstop" for all packages which have "trickier" dependency requirements
-- User-pkgs:
+- [ ] User-pkgs:
   - The NUR/"AUR" equivalent.
   - Allows for people getting started with Nix to share expressions in a semi-centralized manner
-  - Still held linting and basic concerns for code quality, but less of an emphasis from "official" overlays
+  - Linting and basic concerns for code quality still upheld, but less of an emphasis from "official" overlays
 
 ## Addtional tooling
 
