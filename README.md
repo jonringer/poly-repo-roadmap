@@ -19,10 +19,10 @@ less emphasis on dogmatic best practices.
 
 ```mermaid
 ---
-title: Poly Repo
+title: Node
 ---
-graph repos
-  stdenv
+flowchart LR
+    id
 ```
 
 ## Repository descriptions
