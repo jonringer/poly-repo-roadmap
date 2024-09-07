@@ -21,7 +21,7 @@ less emphasis on dogmatic best practices.
 ---
 title: Poly Repo
 ---
-flowchart repos
+flowchart R
     stdenv
 ```
 
