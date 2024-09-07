@@ -29,8 +29,8 @@ flowchart RL
     pkgs --> Python
     pkgs --> Haskell
     pkgs --> Node
-    pkgs --> etc
-    userPkgs --> pkgs
+    pkgs --> etc..
+    UserPkgs --> pkgs
 ```
 
 ## Repository descriptions
