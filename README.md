@@ -39,16 +39,16 @@ flowchart RL
 
 All repositories will be Nix 2.3 compatible, with optional flake.nix entry points.
 
-- [x] Lib: https://github.com/jonringer/nix-lib
+- [x] [Standalone Lib](https://github.com/jonringer/nix-lib)
   - nixpkgs/lib but reduced to just nix utilities
   - lib.systems is moved to stdenv repo
   - lib.maintainers and lib.teams moved to core
-- [x] Stdenv: https://github.com/jonringer/stdenv
+- [x] [Stdenv Repo](https://github.com/jonringer/stdenv):
   - Encapsulates bootstraping the `stdenv` package for platforms.
   - Handles package splicing and cross compilation concerns
   - Contains the logic for `pkgs.config` and overlay application
   - Maintained by a dedicated team of individuals
-- [ ] Core:
+- [x] [Core Repo](https://github.com/jonringer/core-pkgs):
   - Provides the stdenv.mkDerivations (e.g. buildPythonPackage) helpers
   - Provides a few thousand of the most common development dependencies
     - Desire here is to provide the 20% of packages which are used 80% of the time.
@@ -56,6 +56,7 @@ All repositories will be Nix 2.3 compatible, with optional flake.nix entry point
   - Contains maintainer information
 - [ ] Language package sets:
   - Contain a top-level overlay and `overrideScope` of the package set with richer set of packages
+  - [X] [Python Prototype](https://github.com/jonringer/python-pkgs)
 - [ ] Pkgs:
   - Combines all of the langauge package set overlays
   - Acts as the "backstop" for all packages which have "trickier" dependency requirements
@@ -72,6 +73,12 @@ All repositories will be Nix 2.3 compatible, with optional flake.nix entry point
 - [ ] Pkgs Modules
   - "Complete" set of modules, appropriate for most end-users
   - Analogous to the current nixpkgs/nixos module collection
+
+## Additional Proposals
+
+- [Ergonomic cross-compilation dependency terms](https://github.com/jonringer/rename-cross-deps-proposal)
+- [Language-ecosystem overlays as pkgs.config options](https://github.com/jonringer/language-specific-config-overlays-proposal)
+- [Standardize how packages expose versions/variants](https://github.com/jonringer/multiple-package-versions-proposal)
 
 ## Addtional tooling
 
