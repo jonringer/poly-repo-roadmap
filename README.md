@@ -88,6 +88,10 @@ All repositories will be Nix 2.3 compatible, with optional flake.nix entry point
   - Attempt to make PR reviews less risky
   - Build downstream packages (e.g. nixpkgs-review style)
     - New builds, removed builds, newly succeeding, newly failing, still succeeding, still failing
+- [ ] Auto-updater similar to https://github.com/nix-community/nixpkgs-update, but:
+  - Creates issues when an automatic bump failed
+    - Logs of failed build to be easily accessible
+  - Replace re-write rules with just invocations of `nix-update`?
 
 ## Crazy ideas
 
