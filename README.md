@@ -81,6 +81,7 @@ All repositories will be Nix 2.3 compatible, with optional flake.nix entry point
 - [Standardize how packages expose versions/variants](https://github.com/jonringer/multiple-package-versions-proposal)
   - [Auto call polyPkgs to avoid awkward argument passing](https://github.com/jonringer/autocall-poly-pkgs-proposal)
 - [toDevShell function to provide easy dev shell creation for any mkDerivation drv](https://github.com/jonringer/to-dev-shell-proposal)
+- [Align nix expression file paths to attr path](https://github.com/jonringer/normalize-attr-to-path-proposal)
 
 ## Addtional tooling
 
