@@ -49,6 +49,7 @@ All repositories will be Nix 2.3 compatible, with optional flake.nix entry point
   - Contains the logic for `pkgs.config` and overlay application
   - Maintained by a dedicated team of individuals
 - [x] [Core Repo](https://github.com/jonringer/core-pkgs):
+  - Targeting "development and deployment" scenarios
   - Provides the stdenv.mkDerivations (e.g. buildPythonPackage) helpers
   - Provides a few thousand of the most common development dependencies
     - Desire here is to provide the 20% of packages which are used 80% of the time.
@@ -58,6 +59,7 @@ All repositories will be Nix 2.3 compatible, with optional flake.nix entry point
   - Contain a top-level overlay and `overrideScope` of the package set with richer set of packages
   - [X] [Python Prototype](https://github.com/jonringer/python-pkgs)
 - [ ] Pkgs:
+  - Targeting "User desktop" scenarios, most software will be available here
   - Combines all of the langauge package set overlays
   - Acts as the "backstop" for all packages which have "trickier" dependency requirements
 - [ ] User-pkgs:
