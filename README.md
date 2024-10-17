@@ -85,6 +85,7 @@ All repositories will be Nix 2.3 compatible, with optional flake.nix entry point
 - [toDevShell function to provide easy dev shell creation for any mkDerivation drv](https://github.com/jonringer/to-dev-shell-proposal)
 - [Align nix expression file paths to attr path](https://github.com/jonringer/normalize-attr-to-path-proposal)
 - [Alternative to callPackage for non-derivations](https://github.com/jonringer/scope-import-proposal)
+- [Extend pkgs.config to allow for modules to be passed](https://github.com/jonringer/pkgs-modules-proposal)
 
 ## Addtional tooling
 
