@@ -1,3 +1,5 @@
+# MOVED TO https://github.com/ekala-project/ekapkgs-roadmap
+
 # Poly-repo Nixpkgs Fork
 
 Why? Although a single mono-repo makes it easy for dealing with issues which
